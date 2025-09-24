@@ -2,7 +2,11 @@
 
 This repository demonstrates how Deno's `node:zlib` causes stack overflow.
 
-## How to reproduce
+## Realistic Example
+
+`realistic.ts` is a simple program that uses `npm:kuromojin`.
+
+### How to reproduce
 
 Just run:
 
@@ -26,7 +30,15 @@ error: Uncaught (in promise) RangeError: Maximum call stack size exceeded
     at Zlib.processCallback (node:zlib:459:12)
 ```
 
-## Version
+## More Primitive Example
+
+`primitive.ts` directly uses `node:zlib` and can reproduce the issue.
+
+```shell
+deno run primitive.ts
+```
+
+## Additional Info
 
 ```shell
 ❯ deno --version
