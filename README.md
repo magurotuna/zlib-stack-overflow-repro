@@ -7,7 +7,7 @@ This repository demonstrates how Deno's `node:zlib` causes stack overflow.
 Just run:
 
 ```shell
-deno task run
+deno run --allow-env=KUROMOJIN_DIC_PATH --allow-read realistic.ts
 ```
 
 You can see something like this:

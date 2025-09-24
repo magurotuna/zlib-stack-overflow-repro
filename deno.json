@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "run": "deno run --allow-env=KUROMOJIN_DIC_PATH --allow-read main.ts"
+    "run": "deno run --allow-env=KUROMOJIN_DIC_PATH --allow-read realistic.ts"
   },
   "imports": {
     "kuromojin": "npm:kuromojin@^3.0.1"
