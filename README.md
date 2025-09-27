@@ -32,10 +32,13 @@ error: Uncaught (in promise) RangeError: Maximum call stack size exceeded
 
 ## More Primitive Example
 
-`primitive.ts` directly uses `node:zlib` and can reproduce the issue.
+`primitive.ts` and `primitive2.ts` directly use `node:zlib` and can reproduce the issue.
 
 ```shell
 deno run primitive.ts
+
+# or
+deno run primitive2.ts
 ```
 
 ## Additional Info
